@@ -661,9 +661,13 @@ p {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
+  /* gap: 80px; */
 }
 .footer-container-2 {
+  margin-left: 120px;
+}
+.footer-container-3 {
+  margin-left: 80px;
 }
 .footer-title {
   /* font-family: "Roboto"; */
@@ -704,6 +708,68 @@ p {
 .footer-icon {
   width: 24px;
   height: 24px;
+}
+.footer-form {
+}
+.footer-form-text {
+  /* font-family: "Roboto"; */
+  /* font-style: normal; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-form-wraper {
+  display: flex;
+  gap: 24px;
+}
+.footer-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  height: 24px;
+  width: 232px;
+  padding: 8px 16px;
+}
+.footer-form-sumbit {
+  background: #4d5ae5;
+  border-radius: 4px;
+  /* display: flex; */
+  border: none;
+  padding: 8px 24px;
+  color: var(--white-color);
+  height: 40px;
+  min-width: 165px;
+  gap: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+/* .footer-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1,5;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+} */
+.footer-button-icon {
+  fill: var(--white-color);
+  right: auto;
 }
 .backdrop {
   width: 100%;
@@ -874,9 +940,9 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox:checked + .form-check div {
-border-color: #404BBF;
-background-color: #404BBF;
-fill: var(--white-color);
+  border-color: #404bbf;
+  background-color: #404bbf;
+  fill: var(--white-color);
 }
 .form-check-element {
   margin-right: 8px;
@@ -923,14 +989,14 @@ fill: var(--white-color);
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  
+
   transition-property: backhround-color box-shadow color border-color1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button:focus,
 .form-button:hover {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 .form-label-button {
   display: flex;
